@@ -1,10 +1,12 @@
-﻿using InfrastructureManager.Models;
+﻿using cdkManager.Models;
 
-namespace InfrastructureManager.Services
+namespace cdkManager.Services
 {
-    public static class Extensions { 
-    
-        public static void BuildBuckets(this IList<Bucket> buckets, Amazon.CDK.Stack stack) {
+    public static class Extensions
+    {
+
+        public static void BuildBuckets(this IList<Bucket> buckets, Amazon.CDK.Stack stack)
+        {
 
             foreach (var bucket in buckets)
             {
@@ -15,7 +17,7 @@ namespace InfrastructureManager.Services
                     EnforceSSL = bucket.EnforceSSL,
                     PublicReadAccess = bucket.PublicReadAccess,
                     ServerAccessLogsPrefix = bucket.ServerAccessLogsPrefix,
-                    TransferAcceleration= bucket.TransferAcceleration,
+                    TransferAcceleration = bucket.TransferAcceleration,
                     WebsiteErrorDocument = bucket.WebsiteErrorDocument,
                     WebsiteIndexDocument = bucket.WebsiteIndexDocument
                 });

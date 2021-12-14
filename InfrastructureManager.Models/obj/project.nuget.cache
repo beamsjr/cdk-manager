@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NBMfKDWHpnsoAMnWYwcblIqgHbwuFet0XuRCqsTJhZKH5IIl2WzqhTjG83bIcmPckqw1bdUGHhar1AjBtT7cWQ==",
+  "dgSpecHash": "Uf52yKV296504MF4oMo3aYGqiQnuVwN/kr9ioPG6uikhfsA+hB/POXslWMtkM8X6eAFoJJg/9zCdWlzdcQTdKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\InfrastructureManager.Models.csproj",
+  "projectFilePath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

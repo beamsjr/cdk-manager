@@ -1,4 +1,4 @@
-﻿namespace InfrastructureManager.Models
+﻿namespace cdkManager.Models
 {
     public class Bucket
     {
@@ -11,5 +11,6 @@
         public bool? Versioned { get; set; }
         public string? WebsiteErrorDocument { get; set; }
         public string? WebsiteIndexDocument { get; set; }
+        public int Id { get; set; }
     }
 }

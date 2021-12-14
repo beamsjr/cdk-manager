@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace InfrastructureManager.Tests
+namespace cdkManager.Tests
 {
     [TestFixture]
     public class GeneratorServiceTests
@@ -15,13 +15,15 @@ namespace InfrastructureManager.Tests
         public void Test1()
         {
             var generator = new Services.Generator();
-            var stack = new Models.Stack
+            var stack = new Models.Stack("TestStack")
             {
                 Buckets = new List<Models.Bucket>() { new Models.Bucket() { BucketName = "Test" } }
             };
 
             var result = generator.BuildStack(stack);
             Assert.NotNull(result);
+
+            result.ToString();
         }
     }
 }

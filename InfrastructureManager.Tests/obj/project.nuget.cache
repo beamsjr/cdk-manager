@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wLWqAOfWrUNcFGgWnP+LAtHYG8zN2BEzAsimOUm/murwMAUQQNVUFqWFdg8paH7/mMU5Eb4bbTSFWTEJHz48yA==",
+  "dgSpecHash": "h4f2eaWO+ThHp1ofrjEX7oEWHoAwycDzHp+11Vwl4oNNE0jymokJjY9vEcSibZelZeDKynOh4PYZ0olbXubBqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Tests\\InfrastructureManager.Tests.csproj",
+  "projectFilePath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Tests\\cdkManager.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beams\\.nuget\\packages\\amazon.cdk.lib\\2.1.0\\amazon.cdk.lib.2.1.0.nupkg.sha512",
     "C:\\Users\\beams\\.nuget\\packages\\amazon.jsii.runtime\\1.46.0\\amazon.jsii.runtime.1.46.0.nupkg.sha512",

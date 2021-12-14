@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\InfrastructureManager.Models.csproj",
-      "projectName": "InfrastructureManager.Models",
-      "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\InfrastructureManager.Models.csproj",
+      "projectUniqueName": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj",
+      "projectName": "cdkManager.Models",
+      "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj",
       "packagesPath": "C:\\Users\\beams\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\obj\\",
       "projectStyle": "PackageReference",

@@ -227,14 +227,14 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "InfrastructureManager.Models/1.0.0": {
+      "cdkManager.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/InfrastructureManager.Models.dll": {}
+          "bin/placeholder/cdkManager.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/InfrastructureManager.Models.dll": {}
+          "bin/placeholder/cdkManager.Models.dll": {}
         }
       }
     }
@@ -589,16 +589,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "InfrastructureManager.Models/1.0.0": {
+    "cdkManager.Models/1.0.0": {
       "type": "project",
-      "path": "../InfrastructureManager.Models/InfrastructureManager.Models.csproj",
-      "msbuildProject": "../InfrastructureManager.Models/InfrastructureManager.Models.csproj"
+      "path": "../InfrastructureManager.Models/cdkManager.Models.csproj",
+      "msbuildProject": "../InfrastructureManager.Models/cdkManager.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Amazon.CDK.Lib >= 2.1.0",
-      "InfrastructureManager.Models >= 1.0.0"
+      "cdkManager.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -608,9 +608,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\InfrastructureManager.Services.csproj",
-      "projectName": "InfrastructureManager.Services",
-      "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\InfrastructureManager.Services.csproj",
+      "projectUniqueName": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\cdkManager.Services.csproj",
+      "projectName": "cdkManager.Services",
+      "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\cdkManager.Services.csproj",
       "packagesPath": "C:\\Users\\beams\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\obj\\",
       "projectStyle": "PackageReference",
@@ -634,8 +634,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\InfrastructureManager.Models.csproj": {
-              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\InfrastructureManager.Models.csproj"
+            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj": {
+              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj"
             }
           }
         }

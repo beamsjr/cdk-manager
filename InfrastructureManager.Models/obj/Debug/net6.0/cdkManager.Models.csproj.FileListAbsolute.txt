@@ -1,0 +1,12 @@
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\bin\Debug\net6.0\cdkManager.Models.deps.json
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\bin\Debug\net6.0\cdkManager.Models.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\bin\Debug\net6.0\ref\cdkManager.Models.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\bin\Debug\net6.0\cdkManager.Models.pdb
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.csproj.AssemblyReference.cache
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.AssemblyInfoInputs.cache
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.AssemblyInfo.cs
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.csproj.CoreCompileInputs.cache
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\ref\cdkManager.Models.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\InfrastructureManager.Models\obj\Debug\net6.0\cdkManager.Models.pdb

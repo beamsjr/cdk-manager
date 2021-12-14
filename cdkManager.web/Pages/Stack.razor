@@ -1,0 +1,13 @@
+﻿@page "/stack/{stackName?}"
+
+<PageTitle>@StackName</PageTitle>
+
+<h1>@StackName</h1>
+
+<button>Synth</button>
+
+
+@code {
+    [Parameter]
+    public string? StackName { get; set; }
+}

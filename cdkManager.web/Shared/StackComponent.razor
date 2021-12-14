@@ -1,0 +1,16 @@
+﻿@if (SelectedStack == null)
+{
+    <div>Loading...</div>
+}
+else
+{
+
+    <input @bind="SelectedStack.StackName"/>
+
+    <ul>
+            @foreach (var bucket in SelectedStack.Buckets)
+            {
+                <li>@bucket.BucketName</li>
+            }
+    </ul>
+}
