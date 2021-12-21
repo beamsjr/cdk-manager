@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zqDApfgc6wtZUzrbSqPbdnOsBkg2rPGRlSycEaFAfP9P363Pj1q6FkzRiN48gy9TUij7/1myPvZlPEQFQgmhTg==",
+  "dgSpecHash": "ujVhWD1patI3tV7gQKzAYSmiMCC2rTFfFgqa7K3Tq2sZret/o1L2Z8U3ilGJZd4K5OYPvObSCEP8SC6XETUSXA==",
   "success": true,
   "projectFilePath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\cdkManager.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\beams\\.nuget\\packages\\amazon.cdk.lib\\2.1.0\\amazon.cdk.lib.2.1.0.nupkg.sha512",
     "C:\\Users\\beams\\.nuget\\packages\\amazon.jsii.runtime\\1.46.0\\amazon.jsii.runtime.1.46.0.nupkg.sha512",
+    "C:\\Users\\beams\\.nuget\\packages\\awssdk.core\\3.7.5.6\\awssdk.core.3.7.5.6.nupkg.sha512",
+    "C:\\Users\\beams\\.nuget\\packages\\awssdk.s3\\3.7.7.3\\awssdk.s3.3.7.7.3.nupkg.sha512",
     "C:\\Users\\beams\\.nuget\\packages\\constructs\\10.0.0\\constructs.10.0.0.nupkg.sha512",
     "C:\\Users\\beams\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\beams\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

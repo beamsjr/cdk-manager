@@ -22,4 +22,8 @@
     <ProjectReference Include="..\InfrastructureManager.Services\cdkManager.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\fonts\" />
+  </ItemGroup>
+
 </Project>

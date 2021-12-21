@@ -6,9 +6,9 @@ else
 {
     @foreach (var stack in Stacks)
     {
-        <div class="nav-item px-3">
+        <div class="nav-item">
             <NavLink class="nav-link" href=@($"stack/{stack.StackName}")>
-                <span class="oi oi-plus" aria-hidden="true"></span> @stack.StackName
+                @stack.StackName
             </NavLink>
         </div>
     }

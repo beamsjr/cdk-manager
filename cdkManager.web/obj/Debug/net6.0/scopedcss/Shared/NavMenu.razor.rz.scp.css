@@ -1,14 +1,18 @@
 .navbar-toggler[b-adll4csw2l] {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: white;
 }
 
 .top-row[b-adll4csw2l] {
     height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+    background-color: white;
 }
 
 .navbar-brand[b-adll4csw2l] {
     font-size: 1.1rem;
+    color: #16191f;
+}
+.navbar-dark .navbar-brand:focus[b-adll4csw2l], .navbar-dark .navbar-brand:hover[b-adll4csw2l] {
+    color: #16191f;
 }
 
 .oi[b-adll4csw2l] {
@@ -19,6 +23,8 @@
 }
 
 .nav-item[b-adll4csw2l] {
+    color: #16191f;
+    background-color: white;
     font-size: 0.9rem;
     padding-bottom: 0.5rem;
 }
@@ -32,7 +38,6 @@
     }
 
     .nav-item[b-adll4csw2l]  a {
-        color: #d7d7d7;
         border-radius: 4px;
         height: 3rem;
         display: flex;
@@ -40,15 +45,15 @@
         line-height: 3rem;
     }
 
-.nav-item[b-adll4csw2l]  a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
+        .nav-item[b-adll4csw2l]  a.active {
+            background-color: white;
+            color: rgb(236, 114, 17);
+        }
 
-.nav-item[b-adll4csw2l]  a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
+        .nav-item[b-adll4csw2l]  a:hover {
+            background-color: white;
+            color: rgb(236, 114, 17);
+        }
 
 @media (min-width: 641px) {
     .navbar-toggler[b-adll4csw2l] {

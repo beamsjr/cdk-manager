@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "cdkManager.Services/1.0.0": {
         "dependencies": {
+          "AWSSDK.S3": "3.7.7.3",
           "Amazon.CDK.Lib": "2.1.0",
           "cdkManager.Models": "1.0.0"
         },
@@ -38,6 +39,25 @@
           "lib/netcoreapp3.1/Amazon.JSII.Runtime.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.5.6": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.5.6"
+          }
+        }
+      },
+      "AWSSDK.S3/3.7.7.3": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.5.6"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.S3.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.7.3"
           }
         }
       },
@@ -208,6 +228,9 @@
       },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "cdkManager.Models/1.0.0": {
+        "dependencies": {
+          "Amazon.CDK.Lib": "2.1.0"
+        },
         "runtime": {
           "cdkManager.Models.dll": {}
         }
@@ -233,6 +256,20 @@
       "sha512": "sha512-A3nUM0X8b9ZuWbrAV9JUG06rUoOlYXAJbCYnoxNf0ax1YhTOmgR5lK96tssqQFobgzFaR3FdQErezS3WXrqVTw==",
       "path": "amazon.jsii.runtime/1.46.0",
       "hashPath": "amazon.jsii.runtime.1.46.0.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.5.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Y94vfm4jcNAwgwjSqvja2ifPJbU2uK/Kpnu74SjRIgbXCHNnDfr073UhwIqeOWgoQHujggLTJn4JnEh0ImJung==",
+      "path": "awssdk.core/3.7.5.6",
+      "hashPath": "awssdk.core.3.7.5.6.nupkg.sha512"
+    },
+    "AWSSDK.S3/3.7.7.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JqoYHUB4OXrl4M4PbGsocYu9Io9bXeynPPg/a9hsEicuPPreuKn1kOXHtORmrddtuPQr5MwN5hCX13Sn4vyc9w==",
+      "path": "awssdk.s3/3.7.7.3",
+      "hashPath": "awssdk.s3.3.7.7.3.nupkg.sha512"
     },
     "Constructs/10.0.0": {
       "type": "package",

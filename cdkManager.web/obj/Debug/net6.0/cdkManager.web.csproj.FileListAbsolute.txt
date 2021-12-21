@@ -9,6 +9,8 @@ C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\b
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\cdkManager.web.pdb
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\Amazon.CDK.Lib.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\Amazon.JSII.Runtime.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\AWSSDK.S3.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\Constructs.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\Humanizer.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
@@ -71,3 +73,4 @@ C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\o
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\ref\cdkManager.web.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\cdkManager.web.pdb
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\cdkManager.web.genruntimeconfig.cache
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\scopedcss\Shared\StackListComponent.razor.rz.scp.css

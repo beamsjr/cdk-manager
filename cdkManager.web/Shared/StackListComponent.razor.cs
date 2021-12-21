@@ -12,14 +12,14 @@ namespace cdkManager.web.Shared
             {
                 Buckets = new List<Bucket>()
                 {
-                    new() {BucketName = "Test Bucket"}
+                    new("Test Bucket")
                 }
             },
             new("Test Stack2")
             {
                 Buckets = new List<Bucket>()
                 {
-                    new() {BucketName = "Test Bucket2"}
+                    new("Test Bucket 2" )
                 }
             }
         };

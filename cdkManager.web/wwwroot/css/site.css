@@ -1,9 +1,17 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-face {
+    font-family: "Amazon Ember"; 
+    src: url(/fonts/Ember/Amazon-Ember-medium.ttf) format("truetype");
 }
 
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    
+}
+main {
+    background-color: RGB(242, 243, 243);
+}
 h1:focus {
     outline: none;
 }
@@ -62,3 +70,72 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+
+.nav-item {
+    color: #16191f;
+    background-color: white;
+    font-size: 14px;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
+.nav-item ::deep a {
+    border-radius: 4px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+}
+
+.nav-item ::deep a.active {
+    background-color: white;
+    color: rgb(236, 114, 17);
+    font-weight: bold;
+}
+
+.nav-item ::deep a:hover {
+    background-color: white;
+    color: rgb(236, 114, 17);
+}
+
+.nav-link {
+    display: block;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+    line-height: 20px;
+    color: #545b64;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+    .nav-link.active {
+        font-weight: 700;
+        color: rgb(236, 114, 17);
+    }
+.nav-link:focus, .nav-link:hover {
+    color: rgb(236, 114, 17);
+}
+
+
+.sidebar {
+    background-image: none !important;
+    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, 0.3);
+    border-right: 1px solid lightgrey;
+    font-family: "Amazon Ember";
+}
+.ps-3 {
+    padding-left: 0; 
+}
+.top-row {
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 56px;
+    padding-top: 20px;
+    border-bottom: 1px solid #d6d5d5;
+}
+
+.sidebar-main {
+    padding: 30px;
+}
+

@@ -1,8 +1,19 @@
 ﻿@page "/stack/{stackName?}"
 
+<style>
+    .stack-body {
+        border: 1px dashed orange;
+        padding: 10px;
+    }
+</style>
+
 <PageTitle>@StackName</PageTitle>
 
-<h1>@StackName</h1>
+<h4>@StackName</h4>
+<div class="stack-body">
+    
+    
+</div>
 
 <button>Synth</button>
 
@@ -10,4 +21,6 @@
 @code {
     [Parameter]
     public string? StackName { get; set; }
+
+
 }
