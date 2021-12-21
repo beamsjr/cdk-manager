@@ -1,13 +1,26 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
 
-Welcome to your new app.
+<div class="sidebar">
+    <NavMenu/>
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+<main>
+    <article class="content px-4">
+        <PageTitle>Index</PageTitle>
+
+        <h1>Hello, world!</h1>
+
+        Welcome to your new app.
+
+        <SurveyPrompt Title="How is Blazor working for you?" />
+
+    </article>
+</main>
+
 
 @code
 {
+
 }

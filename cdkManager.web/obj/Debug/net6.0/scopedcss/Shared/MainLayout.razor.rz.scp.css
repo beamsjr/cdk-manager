@@ -72,6 +72,13 @@ main[b-ykuwlehn9c] {
     }
 }
 
-.navbar[b-ykuwlehn9c] {
-    background-color: rgb(35, 47, 62);
-}
+    .navbar[b-ykuwlehn9c] {
+        background-color: rgb(35, 47, 62);
+        padding-top: 0px;
+        padding-bottom: 1px;
+        color: white;
+    }
+    .navbar a[b-ykuwlehn9c] {
+        color: white;
+        font-size: 12px;
+    }

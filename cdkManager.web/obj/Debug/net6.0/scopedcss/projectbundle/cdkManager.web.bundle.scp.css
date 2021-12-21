@@ -73,9 +73,16 @@ main[b-ykuwlehn9c] {
     }
 }
 
-.navbar[b-ykuwlehn9c] {
-    background-color: rgb(35, 47, 62);
-}
+    .navbar[b-ykuwlehn9c] {
+        background-color: rgb(35, 47, 62);
+        padding-top: 0px;
+        padding-bottom: 1px;
+        color: white;
+    }
+    .navbar a[b-ykuwlehn9c] {
+        color: white;
+        font-size: 12px;
+    }
 /* _content/cdkManager.web/Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-adll4csw2l] {
     background-color: white;
@@ -213,5 +220,73 @@ main[b-ngdds9h38l] {
     .top-row[b-ngdds9h38l], article[b-ngdds9h38l] {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
+    }
+}
+/* _content/cdkManager.web/Shared/StackMenu.razor.rz.scp.css */
+.navbar-toggler[b-rrhdc0d0nk] {
+    background-color: white;
+}
+
+.top-row[b-rrhdc0d0nk] {
+    height: 3.5rem;
+    background-color: white;
+}
+
+.navbar-brand[b-rrhdc0d0nk] {
+    font-size: 1.1rem;
+    color: #16191f;
+}
+.navbar-dark .navbar-brand:focus[b-rrhdc0d0nk], .navbar-dark .navbar-brand:hover[b-rrhdc0d0nk] {
+    color: #16191f;
+}
+
+.oi[b-rrhdc0d0nk] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-rrhdc0d0nk] {
+    color: #16191f;
+    background-color: white;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-rrhdc0d0nk] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-rrhdc0d0nk] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-rrhdc0d0nk]  a {
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+        .nav-item[b-rrhdc0d0nk]  a.active {
+            background-color: white;
+            color: rgb(236, 114, 17);
+        }
+
+        .nav-item[b-rrhdc0d0nk]  a:hover {
+            background-color: white;
+            color: rgb(236, 114, 17);
+        }
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-rrhdc0d0nk] {
+        display: none;
+    }
+
+    .collapse[b-rrhdc0d0nk] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
     }
 }

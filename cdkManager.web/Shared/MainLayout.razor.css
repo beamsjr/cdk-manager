@@ -72,6 +72,13 @@ main {
     }
 }
 
-.navbar {
-    background-color: rgb(35, 47, 62);
-}
+    .navbar {
+        background-color: rgb(35, 47, 62);
+        padding-top: 0px;
+        padding-bottom: 1px;
+        color: white;
+    }
+    .navbar a {
+        color: white;
+        font-size: 12px;
+    }

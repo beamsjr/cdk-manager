@@ -1,7 +1,7 @@
 ﻿
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">Stacks</a>
+        <a class="navbar-brand" href="">@StackName</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,6 +15,9 @@
 </div>
 
 @code {
+    [Parameter]
+    public string? StackName { get; set; }
+    
     private bool collapseNavMenu = true;
 
     private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;

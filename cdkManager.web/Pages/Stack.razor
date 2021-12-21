@@ -9,15 +9,25 @@
 
 <PageTitle>@StackName</PageTitle>
 
-<h4>@StackName</h4>
-<div class="stack-body">
-    
-    
+
+
+<div class="sidebar">
+    <StackMenu StackName="@StackName"/>
 </div>
 
-<button>Synth</button>
+<main>
+<article class="content px-4">
 
+    <h4>@StackName</h4>
+    <div class="stack-body">
+    
+    
+    </div>
 
+    <button>Synth</button>
+
+</article>
+</main>
 @code {
     [Parameter]
     public string? StackName { get; set; }
