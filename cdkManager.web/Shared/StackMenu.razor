@@ -10,7 +10,9 @@
 
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="sidebar-main flex-column">
-            <StackListComponent ></StackListComponent>
+        <div class="nav-item">
+                Vpc
+        </div>
     </nav>
 </div>
 
@@ -18,12 +20,12 @@
     [Parameter]
     public string? StackName { get; set; }
     
-    private bool collapseNavMenu = true;
+    private bool _collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private string? NavMenuCssClass => _collapseNavMenu ? "collapse" : null;
 
     private void ToggleNavMenu()
     {
-        collapseNavMenu = !collapseNavMenu;
+        _collapseNavMenu = !_collapseNavMenu;
     }
 }

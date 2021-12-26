@@ -14,12 +14,13 @@ main {
 
 .top-row {
     background-color: #f7f7f7;
-
     justify-content: flex-end;
     height: 3.5rem;
     display: flex;
     align-items: center;
     font-weight: 700;
+    box-shadow: 0 1px 1px 0 rgba(0, 28, 36, 0.3);
+    border-right: 1px solid lightgrey;
 }
 
 
@@ -64,6 +65,7 @@ main {
         position: sticky;
         top: 0;
         z-index: 1;
+
     }
 
     .top-row, article {

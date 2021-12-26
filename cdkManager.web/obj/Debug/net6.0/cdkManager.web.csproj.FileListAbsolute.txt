@@ -75,3 +75,5 @@ C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\o
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\cdkManager.web.genruntimeconfig.cache
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\scopedcss\Shared\StackListComponent.razor.rz.scp.css
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\obj\Debug\net6.0\scopedcss\Shared\StackMenu.razor.rz.scp.css
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\cdkManager.Data.dll
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.web\bin\Debug\net6.0\cdkManager.Data.pdb

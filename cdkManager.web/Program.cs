@@ -1,3 +1,4 @@
+using cdkManager.Data;
 using cdkManager.web.Areas.Identity;
 using cdkManager.web.Data;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -17,6 +18,11 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<IdentityUser>>();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+
+builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddTransient<IStackRepository, StackRepository>();
+//builder.Services.AddTransient<IBucketRepository, BucketRepository>();
 
 var app = builder.Build();
 

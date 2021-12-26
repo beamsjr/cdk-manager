@@ -920,6 +920,20 @@
           }
         }
       },
+      "cdkManager.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "cdkManager.Models": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/cdkManager.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/cdkManager.Data.dll": {}
+        }
+      },
       "cdkManager.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2736,6 +2750,11 @@
         "version.txt"
       ]
     },
+    "cdkManager.Data/1.0.0": {
+      "type": "project",
+      "path": "../cdkManager.Data/cdkManager.Data.csproj",
+      "msbuildProject": "../cdkManager.Data/cdkManager.Data.csproj"
+    },
     "cdkManager.Models/1.0.0": {
       "type": "project",
       "path": "../InfrastructureManager.Models/cdkManager.Models.csproj",
@@ -2755,6 +2774,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.14.0",
+      "cdkManager.Data >= 1.0.0",
       "cdkManager.Models >= 1.0.0",
       "cdkManager.Services >= 1.0.0"
     ]
@@ -2792,6 +2812,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Data\\cdkManager.Data.csproj": {
+              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Data\\cdkManager.Data.csproj"
+            },
             "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj": {
               "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj"
             },
