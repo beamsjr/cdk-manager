@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Models", "InfrastructureManager.Models\cdkManager.Models.csproj", "{BCE238D6-C1D6-4A58-8AFF-79C4699A3D81}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Services", "InfrastructureManager.Services\cdkManager.Services.csproj", "{6277374A-7F32-4595-9171-5D398C3A1853}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Tests", "InfrastructureManager.Tests\cdkManager.Tests.csproj", "{29D969D9-8177-4307-972B-565BF95289D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Tests", "cdkManager.Tests\cdkManager.Tests.csproj", "{29D969D9-8177-4307-972B-565BF95289D1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.web", "cdkManager.web\cdkManager.web.csproj", "{5F57045F-242E-4E9D-BB77-FFD1A7B4396F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cdkManager.Data", "cdkManager.Data\cdkManager.Data.csproj", "{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Data", "cdkManager.Data\cdkManager.Data.csproj", "{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Models", "cdkManager.Models\cdkManager.Models.csproj", "{3D95F994-C186-4DC2-8AA4-8362483E0F5B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Services", "cdkManager.Services\cdkManager.Services.csproj", "{55F35E36-FDCE-4783-ADC5-F936666A1EDB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BCE238D6-C1D6-4A58-8AFF-79C4699A3D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCE238D6-C1D6-4A58-8AFF-79C4699A3D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCE238D6-C1D6-4A58-8AFF-79C4699A3D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCE238D6-C1D6-4A58-8AFF-79C4699A3D81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6277374A-7F32-4595-9171-5D398C3A1853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6277374A-7F32-4595-9171-5D398C3A1853}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6277374A-7F32-4595-9171-5D398C3A1853}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6277374A-7F32-4595-9171-5D398C3A1853}.Release|Any CPU.Build.0 = Release|Any CPU
 		{29D969D9-8177-4307-972B-565BF95289D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{29D969D9-8177-4307-972B-565BF95289D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D969D9-8177-4307-972B-565BF95289D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +31,14 @@ Global
 		{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D95F994-C186-4DC2-8AA4-8362483E0F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D95F994-C186-4DC2-8AA4-8362483E0F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D95F994-C186-4DC2-8AA4-8362483E0F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D95F994-C186-4DC2-8AA4-8362483E0F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

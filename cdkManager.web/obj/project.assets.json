@@ -2757,13 +2757,13 @@
     },
     "cdkManager.Models/1.0.0": {
       "type": "project",
-      "path": "../InfrastructureManager.Models/cdkManager.Models.csproj",
-      "msbuildProject": "../InfrastructureManager.Models/cdkManager.Models.csproj"
+      "path": "../cdkManager.Models/cdkManager.Models.csproj",
+      "msbuildProject": "../cdkManager.Models/cdkManager.Models.csproj"
     },
     "cdkManager.Services/1.0.0": {
       "type": "project",
-      "path": "../InfrastructureManager.Services/cdkManager.Services.csproj",
-      "msbuildProject": "../InfrastructureManager.Services/cdkManager.Services.csproj"
+      "path": "../cdkManager.Services/cdkManager.Services.csproj",
+      "msbuildProject": "../cdkManager.Services/cdkManager.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2815,11 +2815,11 @@
             "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Data\\cdkManager.Data.csproj": {
               "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Data\\cdkManager.Data.csproj"
             },
-            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj": {
-              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj"
+            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Models\\cdkManager.Models.csproj": {
+              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Models\\cdkManager.Models.csproj"
             },
-            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\cdkManager.Services.csproj": {
-              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Services\\cdkManager.Services.csproj"
+            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Services\\cdkManager.Services.csproj": {
+              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Services\\cdkManager.Services.csproj"
             }
           }
         }

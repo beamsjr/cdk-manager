@@ -859,8 +859,8 @@
     },
     "cdkManager.Models/1.0.0": {
       "type": "project",
-      "path": "../InfrastructureManager.Models/cdkManager.Models.csproj",
-      "msbuildProject": "../InfrastructureManager.Models/cdkManager.Models.csproj"
+      "path": "../cdkManager.Models/cdkManager.Models.csproj",
+      "msbuildProject": "../cdkManager.Models/cdkManager.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -902,8 +902,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj": {
-              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\InfrastructureManager.Models\\cdkManager.Models.csproj"
+            "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Models\\cdkManager.Models.csproj": {
+              "projectPath": "C:\\Users\\beams\\OneDrive\\Documents\\GitHub\\infrastructure-manager\\cdkManager.Models\\cdkManager.Models.csproj"
             }
           }
         }

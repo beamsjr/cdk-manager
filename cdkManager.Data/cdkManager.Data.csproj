@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\InfrastructureManager.Models\cdkManager.Models.csproj" />
+    <ProjectReference Include="..\cdkManager.Models\cdkManager.Models.csproj" />
   </ItemGroup>
 
 </Project>

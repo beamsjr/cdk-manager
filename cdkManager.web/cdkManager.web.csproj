@@ -19,8 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\cdkManager.Data\cdkManager.Data.csproj" />
-    <ProjectReference Include="..\InfrastructureManager.Models\cdkManager.Models.csproj" />
-    <ProjectReference Include="..\InfrastructureManager.Services\cdkManager.Services.csproj" />
+    <ProjectReference Include="..\cdkManager.Models\cdkManager.Models.csproj" />
+    <ProjectReference Include="..\cdkManager.Services\cdkManager.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
