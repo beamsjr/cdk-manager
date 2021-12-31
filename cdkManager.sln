@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Models", "cdkMan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Services", "cdkManager.Services\cdkManager.Services.csproj", "{55F35E36-FDCE-4783-ADC5-F936666A1EDB}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager", "cdkManager\cdkManager.csproj", "{56732C9F-E1A0-4C84-AA61-F738F4CCD774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55F35E36-FDCE-4783-ADC5-F936666A1EDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56732C9F-E1A0-4C84-AA61-F738F4CCD774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56732C9F-E1A0-4C84-AA61-F738F4CCD774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56732C9F-E1A0-4C84-AA61-F738F4CCD774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56732C9F-E1A0-4C84-AA61-F738F4CCD774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

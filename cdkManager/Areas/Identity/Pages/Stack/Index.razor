@@ -1,0 +1,89 @@
+﻿@page "/Stacks"
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<div class="sidebar">
+    <NavMenu/>
+</div>
+
+<main>
+    <article class="content px-4">
+        <PageTitle>CDK Manager</PageTitle>
+        
+        <div class="container bd">
+            
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid"><strong>
+            <a class="navbar-brand" href="#">Stacks</a></strong>(@Stacks?.Count)
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="submit">Create Stack</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+            <table class="table">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Updated</th>
+                    <th scope="col">Deployed</th>
+                </tr>
+                </thead>
+                <tbody>
+                @if (Stacks != null)
+                {
+                    @foreach (var stack in Stacks)
+                    {
+                        <tr>
+                            <td></td>
+                            <td><a href="stack/@stack.StackName">@stack.StackName</a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+
+                    }
+                }
+                </tbody>
+            </table>
+        </div>
+
+    </article>
+</main>
+
+
+@code
+{
+    [Parameter]
+    public IList<Models.Stack>? Stacks { get; set; } = new List<Models.Stack>()
+    {
+        new("Test Stack")
+        {
+            Buckets = new List<Models.Bucket>()
+            {
+                new("Test Bucket")
+            }
+        },
+        new("Test Stack2")
+        {
+            Buckets = new List<Models.Bucket>()
+            {
+                new("Test Bucket 2")
+            }
+        }
+    };
+
+}

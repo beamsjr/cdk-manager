@@ -13,3 +13,5 @@ C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.Data\
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.Data\obj\Debug\net6.0\cdkManager.Data.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.Data\obj\Debug\net6.0\ref\cdkManager.Data.dll
 C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.Data\obj\Debug\net6.0\cdkManager.Data.pdb
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.Data\bin\Debug\net6.0\cdkManager.Data.runtimeconfig.json
+C:\Users\beams\OneDrive\Documents\GitHub\infrastructure-manager\cdkManager.Data\obj\Debug\net6.0\cdkManager.Data.genruntimeconfig.cache

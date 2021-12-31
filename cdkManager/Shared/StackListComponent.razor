@@ -1,0 +1,15 @@
+﻿@if (Stacks == null)
+{
+    <text>Loading...</text>
+}
+else
+{
+    @foreach (var stack in Stacks)
+    {
+        <div class="nav-item">
+            <NavLink class="nav-link" href=@($"stack/{stack.StackName}")>
+                @stack.StackName
+            </NavLink>
+        </div>
+    }
+}

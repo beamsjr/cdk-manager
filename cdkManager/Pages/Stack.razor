@@ -1,0 +1,36 @@
+﻿@page "/stack/{stackName?}"
+
+<style>
+    .stack-body {
+        border: 1px dashed orange;
+        padding: 10px;
+    }
+</style>
+
+<PageTitle>@StackName</PageTitle>
+
+
+
+<div class="sidebar">
+    <StackMenu StackName="@StackName"/>
+</div>
+
+<main>
+<article class="content px-4">
+
+    <h4>@StackName</h4>
+    <div class="stack-body">
+    
+    
+    </div>
+
+    <button>Synth</button>
+
+</article>
+</main>
+@code {
+    [Parameter]
+    public string? StackName { get; set; }
+
+
+}
