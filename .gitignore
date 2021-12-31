@@ -1,0 +1,16 @@
+*.user
+cdkManager/bin/
+cdkManager/obj/
+cdkManager.Data/obj/
+cdkManager.Data/bin/
+cdkManager.Models/obj/
+cdkManager.Models/bin/
+cdkManager.Services/obj/
+cdkManager.Services/bin/
+cdkManager.Tests/obj/
+cdkManager.Tests/bin/
+cdkManager.Web/obj/
+cdkManager.Web/bin/
+.vs/
+
+
