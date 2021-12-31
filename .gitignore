@@ -1,4 +1,4 @@
-cdkManager.sln.DotSettings.user
+*.user
 cdkManager/bin/
 cdkManager/obj/
 cdkManager.Data/obj/
