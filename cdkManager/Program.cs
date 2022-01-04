@@ -1,5 +1,7 @@
+using cdkManager;
 using cdkManager.Areas.Identity;
 using cdkManager.Data;
+using cdkManager.Services;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
@@ -39,8 +41,10 @@ builder.Services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuth
 
 builder.Services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddTransient<IStackRepository, StackRepository>();
-//builder.Services.AddTransient<IBucketRepository, BucketRepository>();
+builder.Services.AddTransient<IBucketRepository, BucketRepository>();
+builder.Services.AddScoped<IModals, Modals>();
 
+builder.Services.AddTransient<IGenerator, Generator>();
 
 
 var app = builder.Build();

@@ -1,5 +1,11 @@
 ﻿@page "/stack/{stackName?}"
-
+@using Microsoft.EntityFrameworkCore
+@using cdkManager.Models
+@using cdkManager.Services
+@inject Data.IBucketRepository _bucketRepository;
+@inject Data.IStackRepository _stackRepository;
+@inject IModals _modals;
+@inject IGenerator Generator;
 <style>
     .stack-body {
         border: 1px dashed orange;
@@ -12,25 +18,98 @@
 
 
 <div class="sidebar">
-    <StackMenu StackName="@StackName"/>
+    <StackMenu Stack="@SelectedStack" />
 </div>
 
 <main>
-<article class="content px-4">
+    <article class="content px-4">
+        
+        <button @onclick="Synth">Build Stack</button>
 
-    <h4>@StackName</h4>
-    <div class="stack-body">
-    
-    
-    </div>
+        @if (SelectedStack == null)
+        {
+            <div>Loading....</div>
+        }
+        else
+        {
 
-    <button>Synth</button>
+            <h4>@SelectedStack?.StackName</h4>
+            <div class="stack-body">
+                
+                <BucketTableComponent Buckets="SelectedStack?.Buckets"></BucketTableComponent>
+                <VpcTableComponent  Vpcs="SelectedStack?.Vpcs"></VpcTableComponent>
 
-</article>
+            </div>
+
+        }
+
+    </article>
 </main>
+
+@if (_modals.BucketModal.Visible)
+{
+    <div class="modal" tabindex="-1" style="display:block">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">New Bucket</h5>
+                    <button type="button" class="btn-close" aria-label="Close" @onclick="_modals.BucketModal.Toggle"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="StackName" class="form-label">Stack Name</label>
+                        <input type="text" class="form-control" id="StackNameInput" aria-describedby="Bucket Name" @bind-value="_modals.BucketModal.Data.BucketName">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" @onclick="() => SaveNewBucket(_modals.BucketModal)">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
 @code {
     [Parameter]
     public string? StackName { get; set; }
 
+    public Models.Stack? SelectedStack { get; set; }
+
+    public async void SaveNewBucket(Modal<Models.Bucket> modal)
+    {
+        if (_bucketRepository == null || SelectedStack == null)
+        {
+            //TODO: Warn user something is broke... Log this...
+            return;
+        }
+
+        SelectedStack.Buckets ??= new List<Bucket>();
+        SelectedStack.Buckets.Add(modal.Data);
+        modal.Toggle();
+        await _bucketRepository.AddAsync(modal.Data);
+        modal.Data = new Bucket();
+    }
+    private void Refresh()
+    {
+        StateHasChanged();
+    }
+    protected override void OnInitialized()
+    {
+        _modals.BucketModal.RefreshRequested += Refresh;
+
+        SelectedStack = _stackRepository.GetAll()
+            .Include(x => x.Buckets)
+            .Include(x => x.Vpcs)
+            .FirstOrDefault(x => x.StackName == StackName) ?? new Models.Stack();
+    }
+
+    public void Synth()
+    {
+        if (SelectedStack != null)
+        {
+            var result = Generator.BuildStack(SelectedStack);
+        }
+    }
 
 }

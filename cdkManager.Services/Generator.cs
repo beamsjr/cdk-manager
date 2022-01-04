@@ -4,17 +4,35 @@ using cdkManager.Models;
 
 namespace cdkManager.Services
 {
-    public class Generator
+    public interface IGenerator
     {
-        public Amazon.CDK.CXAPI.CloudAssembly BuildStack(Stack model)
+        Amazon.CDK.CXAPI.CloudAssembly BuildStack(Models.Stack model);
+    }
+    public class Generator : IGenerator
+    {
+        public Amazon.CDK.CXAPI.CloudAssembly BuildStack(Models.Stack model)
         {
             var app = new Amazon.CDK.App();
-            
-            var stack = new Amazon.CDK.Stack(app, model.StackName);
 
-            foreach (var bucket in model.Buckets)
+            var stack = new Amazon.CDK.Stack(app, model.StackName.Replace("_",""));
+
+            if (model.Buckets != null)
             {
-                bucket.Build(stack);
+                foreach (var bucket in model.Buckets)
+                {
+                    if (bucket?.BucketName != null)
+                        new Amazon.CDK.AWS.S3.Bucket(stack, bucket.BucketName, new Amazon.CDK.AWS.S3.BucketProps
+                        {
+                            Versioned = bucket.Versioned,
+                            BucketKeyEnabled = bucket.BucketKeyEnabled,
+                            EnforceSSL = bucket.EnforceSSL,
+                            PublicReadAccess = bucket.PublicReadAccess,
+                            ServerAccessLogsPrefix = bucket.ServerAccessLogsPrefix,
+                            TransferAcceleration = bucket.TransferAcceleration,
+                            WebsiteErrorDocument = bucket.WebsiteErrorDocument,
+                            WebsiteIndexDocument = bucket.WebsiteIndexDocument
+                        });
+                }
             }
 
             return app.Synth();
@@ -23,7 +41,7 @@ namespace cdkManager.Services
 
         public async Task<List<S3Bucket>> GetBuckets()
         {
-            var  client = new Amazon.S3.AmazonS3Client();
+            var client = new Amazon.S3.AmazonS3Client();
 
             var request = await client.ListBucketsAsync();
 
@@ -48,7 +66,7 @@ namespace cdkManager.Services
             var client = new Amazon.S3.AmazonS3Client();
 
             var request = await client.GetPublicAccessBlockAsync(new GetPublicAccessBlockRequest()
-                {BucketName = bucketName});
+            { BucketName = bucketName });
 
             return request.PublicAccessBlockConfiguration;
         }

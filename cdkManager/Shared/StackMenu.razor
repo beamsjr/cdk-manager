@@ -1,7 +1,9 @@
-﻿
+﻿@using cdkManager.Models
+@inject IModals _modals;
+
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="">@StackName</a>
+        <a class="navbar-brand" href="">@Stack?.StackName</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,21 +13,43 @@
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="sidebar-main flex-column">
         <div class="nav-item">
-                Vpc
+            <button>Add Vpc</button>
+        </div>
+        <div class="nav-item">
+            <button class="btn btn-primary" @onclick="() => ToggleModal(_modals.BucketModal)">Add Bucket</button>
         </div>
     </nav>
 </div>
 
 @code {
+
     [Parameter]
-    public string? StackName { get; set; }
+    public Models.Stack? Stack { get; set; }
     
     private bool _collapseNavMenu = true;
 
     private string? NavMenuCssClass => _collapseNavMenu ? "collapse" : null;
 
+    protected override void OnInitialized()
+    {
+        _modals.BucketModal.RefreshRequested += Refresh;
+    }
+
+    private void ToggleModal(Modal<Models.Bucket> modal)
+    {
+        modal.Toggle();
+        this.StateHasChanged();
+    }
+
     private void ToggleNavMenu()
     {
         _collapseNavMenu = !_collapseNavMenu;
     }
+    
+    private void Refresh()
+    {
+        StateHasChanged();
+    }
 }
+
+

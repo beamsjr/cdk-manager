@@ -72,6 +72,18 @@ namespace cdkManager.Data
         }
     }
 
+    public interface IBucketRepository : IRepository<Models.Bucket>
+    {
+
+    }
+
+    public class BucketRepository : Repository<Models.Bucket>, IBucketRepository
+    {
+        public BucketRepository(ApplicationDbContext repositoryContext) : base(repositoryContext)
+        {
+        }
+    }
+
     public interface IStackRepository : IRepository<Models.Stack>
     {
         Task<Stack?> GetProductByIdAsync(int id);

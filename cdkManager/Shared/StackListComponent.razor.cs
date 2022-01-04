@@ -36,7 +36,7 @@ namespace cdkManager.Shared
 
             public string Text { get; set; }
             public int Id { get; set; }
-            public IEnumerable<Item> Children { get; set; }
+            public IEnumerable<Item>? Children { get; set; }
             public string Type { get; set; }
         }
 

@@ -1,19 +1,15 @@
-﻿@page "/"
-@using Microsoft.AspNetCore.Identity
-@using cdkManager.Data
-@inject UserManager<IdentityUser> UserManager
-
-<main>
+﻿@using cdkManager.Data
+@inject IModals _modals;
+@inject IRepository<Models.Vpc> _vpcRepository;
     <article class="content px-4">
-        <PageTitle>CDK Manager</PageTitle>
 
         <div class="container bd">
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <strong>
-                        <a class="navbar-brand" href="#">Stacks</a>
-                    </strong>(@Stacks?.Count)
+                        <a class="navbar-brand" href="#">Vpcs</a>
+                    </strong>(@Vpcs.Count)
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -22,7 +18,7 @@
                         </ul>
 
                         <div class="d-flex">
-                            <button class="btn btn-primary" @onclick="Modals.StackModal.Toggle">Create Stack</button>
+                            <button class="btn btn-primary" @onclick="_modals.VpcModal.Toggle">Create Vpc</button>
                         </div>
                     </div>
                 </div>
@@ -39,13 +35,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @if (Stacks != null)
+                    @if (Vpcs != null)
                     {
-                        @foreach (var stack in Stacks)
+                        @foreach (var Vpc in Vpcs)
                         {
                             <tr>
                                 <td></td>
-                                <td><a href="stack/@stack.StackName">@stack.StackName</a></td>
+                                <td><a>@Vpc.VpcName</a></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -61,39 +57,43 @@
                 </tbody>
             </table>
         </div>
+        </article>
 
-    </article>
-
-    @if (Modals.StackModal.Visible)
+    @if (_modals.VpcModal.Visible)
     {
         <div class="modal" tabindex="-1" style="display:block">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">New Stack</h5>
-                        <button type="button" class="btn-close" aria-label="Close" @onclick="Modals.StackModal.Toggle"></button>
+                        <h5 class="modal-title">New Vpc</h5>
+                        <button type="button" class="btn-close" aria-label="Close" @onclick="_modals.VpcModal.Toggle"></button>
                     </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <label for="StackName" class="form-label">Stack Name</label>
-                                <input type="text" class="form-control" id="StackNameInput" aria-describedby="Stack Name" @bind-value="Modals.StackModal.Data.StackName">
+                                <label for="VpcName" class="form-label">Vpc Name</label>
+                                <input type="text" class="form-control" id="VpcNameInput" aria-describedby="Stack Name" @bind-value="_modals.VpcModal.Data.VpcName">
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button class="btn btn-primary" @onclick="() => SaveNewStack(Modals.StackModal)">Submit</button>
+                            @* <button class="btn btn-primary" @onclick="() => SaveNewStack(Modals.StackModal)">Submit</button> *@
                         </div>
                 </div>
             </div>
         </div>
     }
+    
+    
+    @code
+    {
 
-</main>
+        [Parameter]
+        public IList<Models.Vpc>? Vpcs { get; set; }
 
 
-@code
-{
- 
 
+        public async void SaveNewVpc(Modal<Models.Bucket> modal)
+        {
+        }
+    }
 
-}

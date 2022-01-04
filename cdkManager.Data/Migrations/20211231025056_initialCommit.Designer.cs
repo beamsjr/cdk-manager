@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using cdkManager.Data;
 
@@ -11,9 +12,10 @@ using cdkManager.Data;
 namespace cdkManager.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211231025056_initialCommit")]
+    partial class initialCommit
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -94,36 +96,6 @@ namespace cdkManager.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Stack");
-                });
-
-            modelBuilder.Entity("cdkManager.Models.Vpc", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Cidr")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool?>("EnableDnsHostnames")
-                        .HasColumnType("bit");
-
-                    b.Property<bool?>("EnableDnsSupport")
-                        .HasColumnType("bit");
-
-                    b.Property<int?>("StackId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("VpcName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("StackId");
-
-                    b.ToTable("Vpc");
                 });
 
             modelBuilder.Entity("Duende.IdentityServer.EntityFramework.Entities.DeviceFlowCodes", b =>
@@ -296,22 +268,22 @@ namespace cdkManager.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "678a66d4-0851-4cc7-9396-7e14006846b2",
-                            ConcurrencyStamp = "363cf371-435a-424f-9636-c4ef089480f9",
+                            Id = "9299ba3c-87a2-4156-914a-3003603e3798",
+                            ConcurrencyStamp = "33ff7ad3-dcb5-4dc6-8c87-9ba64442262c",
                             Name = "Visitor",
                             NormalizedName = "VISITOR"
                         },
                         new
                         {
-                            Id = "b30b8f70-2edb-4ccc-928d-8a0a8613dc27",
-                            ConcurrencyStamp = "396da44a-69d1-41ae-bba6-f217e69e21db",
+                            Id = "85e000ae-5e55-4425-a33e-2560e0537489",
+                            ConcurrencyStamp = "4f9186e7-ecc7-4f5d-b15e-d884c1873d81",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "de58639a-3d79-471e-9b26-6d2f8f9a2c23",
-                            ConcurrencyStamp = "d1216ce5-241d-4ae4-a426-f6c3937eed2e",
+                            Id = "2f0c1834-78b2-481e-a146-1eb659e15022",
+                            ConcurrencyStamp = "6540de3a-ab0c-471a-8fe9-62c635a2424e",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -499,13 +471,6 @@ namespace cdkManager.Data.Migrations
                         .HasForeignKey("StackId");
                 });
 
-            modelBuilder.Entity("cdkManager.Models.Vpc", b =>
-                {
-                    b.HasOne("cdkManager.Models.Stack", null)
-                        .WithMany("Vpcs")
-                        .HasForeignKey("StackId");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -560,8 +525,6 @@ namespace cdkManager.Data.Migrations
             modelBuilder.Entity("cdkManager.Models.Stack", b =>
                 {
                     b.Navigation("Buckets");
-
-                    b.Navigation("Vpcs");
                 });
 #pragma warning restore 612, 618
         }

@@ -5,8 +5,6 @@ VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Tests", "cdkManager.Tests\cdkManager.Tests.csproj", "{29D969D9-8177-4307-972B-565BF95289D1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.web", "cdkManager.web\cdkManager.web.csproj", "{5F57045F-242E-4E9D-BB77-FFD1A7B4396F}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Data", "cdkManager.Data\cdkManager.Data.csproj", "{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cdkManager.Models", "cdkManager.Models\cdkManager.Models.csproj", "{3D95F994-C186-4DC2-8AA4-8362483E0F5B}"
@@ -25,10 +23,6 @@ Global
 		{29D969D9-8177-4307-972B-565BF95289D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D969D9-8177-4307-972B-565BF95289D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D969D9-8177-4307-972B-565BF95289D1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F57045F-242E-4E9D-BB77-FFD1A7B4396F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F57045F-242E-4E9D-BB77-FFD1A7B4396F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F57045F-242E-4E9D-BB77-FFD1A7B4396F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F57045F-242E-4E9D-BB77-FFD1A7B4396F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C9EB76-7E8D-452A-A082-F8D9BF940A55}.Release|Any CPU.ActiveCfg = Release|Any CPU
